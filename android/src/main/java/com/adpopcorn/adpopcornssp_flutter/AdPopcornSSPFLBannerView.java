@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.igaworks.ssp.AdSize;
+import com.igaworks.ssp.BannerAnimType;
 import com.igaworks.ssp.SSPErrorCode;
 import com.igaworks.ssp.part.banner.AdPopcornSSPBannerAd;
 import com.igaworks.ssp.part.banner.listener.IBannerEventCallbackListener;
