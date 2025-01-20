@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.igaworks.ssp.AdSize;
+import com.igaworks.ssp.BannerAnimType;
 import com.igaworks.ssp.SSPErrorCode;
 import com.igaworks.ssp.part.banner.AdPopcornSSPBannerAd;
 import com.igaworks.ssp.part.banner.listener.IBannerEventCallbackListener;
@@ -46,6 +47,9 @@ public class AdPopcornSSPFLBannerView implements PlatformView, IBannerEventCallb
             bannerView.setAdSize(AdSize.BANNER_320x100);
         else
             bannerView.setAdSize(AdSize.BANNER_ADAPTIVE_SIZE);
+
+        //기본이 왜 문서랑 다르게 페이드인일까...
+        bannerView.setBannerAnimType(BannerAnimType.NONE);
         bannerView.loadAd();
     }
 
